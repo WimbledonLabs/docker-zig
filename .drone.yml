@@ -11,10 +11,9 @@ steps:
     password:
       from_secret: docker_password
     build_args:
-      VERSION: &version
-          "0.8.0"
+        - VERSION=0.8.0
     tags:
-        - *version
+        - "0.8.0"
 
 trigger:
   event:
